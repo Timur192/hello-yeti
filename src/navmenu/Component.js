@@ -33,8 +33,7 @@ export default class Component extends PureComponent {
             return (
                 <div>
                     <Stack spacing={2} direction="row">
-                        {/* <Button onClick={this.handleClick} variant="contained">Open</Button> */}
-                        <a onClick={this.handleClick} href='#' className='button'>Open</a>
+                        <Button onClick={this.handleClick} variant="contained">Open</Button>
                     </Stack>
                 </div>
             )
