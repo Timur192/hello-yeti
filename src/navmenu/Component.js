@@ -23,9 +23,9 @@ export default class Component extends PureComponent {
   render() {
       if (this.state.visibility) {
         return (
-        <div>
-            <img src="https://c.tenor.com/RUw-dmfAm48AAAAC/peach-cat-annoying.gif" alt="gif" width={400} border="0"/><br/>
-            <p>i like you :) </p>
+        <div className="App">
+            <img src="https://media3.giphy.com/media/3o7bukPWLMVsRz38J2/giphy.gif" alt="gif" width={400} border="0"/><br/>
+            <p>React yeti</p>
             <Button onClick={this.handleClick} variant="outlined">Close</Button>
         </div>
         )
@@ -33,7 +33,8 @@ export default class Component extends PureComponent {
             return (
                 <div>
                     <Stack spacing={2} direction="row">
-                        <Button onClick={this.handleClick} variant="contained">Open</Button>
+                        {/* <Button onClick={this.handleClick} variant="contained">Open</Button> */}
+                        <a onClick={this.handleClick} href='#' className='button'>Open</a>
                     </Stack>
                 </div>
             )

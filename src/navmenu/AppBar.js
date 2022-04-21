@@ -1,15 +1,20 @@
 import * as React from 'react';
 import '../App.css';
 import AppBar from '@mui/material/AppBar';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import { Dialog, DialogContent, DialogContentText, DialogTitle, DialogActions } from '@mui/material';
 
 import TextField from '@mui/material/TextField';
+
+import { Homepage } from '../pages/Homepage';
+import { About } from '../pages/Aboutpage';
+import { Contactpage } from '../pages/Contactpage';
+
 
 function PricingContent() {
   /*const classes = useStyles();
@@ -43,25 +48,10 @@ function PricingContent() {
         <Typography variant="h5" color="inherit" sx={{ pr: 115, ms: 1.5 }} >
             Hello Yeti
           </Typography>
-          <nav>
-            <Link className='App-link'
-              variant="button"
-              color="text.primary"
-              href="#"
-              sx={{ my: 1, mx: 25 }}
-              top="20px"
-            >
-              Features
-            </Link>
-            <Link className='App-link'
-              variant="button"
-              color="text.primary"
-              href="#"
-              sx={{ my: 1, mx: 15.5 }}
-              top="20px"
-            >
-              Support
-            </Link>
+          <nav className='position'>
+            <NavLink  to='/' className='navlink-style'>Home</NavLink>
+            <NavLink to='/about' className='navlink-style'>About</NavLink>
+            <NavLink to='/contact' className='navlink-style'>Contact</NavLink>
           </nav>
           <div className='App-link'>
               <Button
@@ -101,6 +91,12 @@ function PricingContent() {
           </div>
         </Toolbar>
       </AppBar>
+
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contactpage />} />
+      </Routes>
     </React.Fragment>
   );
 }

@@ -6,7 +6,6 @@ const Homepage = () => {
     <div className="App">
       <header className="App-header">
             <Component />
-            <h1>Home</h1>
         </header>
     </div>
     )
