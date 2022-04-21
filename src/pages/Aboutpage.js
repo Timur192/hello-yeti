@@ -5,9 +5,9 @@ const About = () => {
     return (
     <div className="App">
         <header className="App-header">
-            <div className="common-block">
-              <h2 className="title">Hi, I am <br /> Novice web developer</h2>
-              <div className="text-block">
+          <div className='title'> 
+              <h2>Hi, I am <br /> Novice web developer</h2>
+              <div>
                 <p>
                   I am from Uzbekistan. place of beauty and nature. I have loved
                   art and design since childhood. I always try to create stuff
@@ -15,7 +15,7 @@ const About = () => {
                   that can be useful to others.
                 </p>
               </div>
-          </div>
+          </div>   
         </header>
       </div>
     )
