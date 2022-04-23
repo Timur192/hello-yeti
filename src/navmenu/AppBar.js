@@ -12,18 +12,11 @@ import { Dialog, DialogContent, DialogContentText, DialogTitle, DialogActions } 
 import TextField from '@mui/material/TextField';
 
 import { Homepage } from '../pages/Homepage';
-import { About } from '../pages/Aboutpage';
+import { Weatherpage } from '../pages/Weatherpage';
 import { Contactpage } from '../pages/Contactpage';
 
 
 function PricingContent() {
-  /*const classes = useStyles();
-  const [value, setValue] = React.useState("recents")
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };*/
-
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -50,7 +43,7 @@ function PricingContent() {
           </Typography>
           <nav className='position'>
             <NavLink  to='/' className='navlink-style'>Home</NavLink>
-            <NavLink to='/about' className='navlink-style'>About</NavLink>
+            <NavLink to='/weather' className='navlink-style'>Weather</NavLink>
             <NavLink to='/contact' className='navlink-style'>Contact</NavLink>
           </nav>
           <div className='App-link'>
@@ -94,7 +87,7 @@ function PricingContent() {
 
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/weather" element={<Weatherpage />} />
         <Route path="/contact" element={<Contactpage />} />
       </Routes>
     </React.Fragment>

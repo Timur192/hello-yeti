@@ -1,11 +1,11 @@
 import '../App.css';
-import Component from '../navmenu/Component';
+import Yetihome from '../navmenu/Yetihome';
 
 const Homepage = () => {
     return (
     <div className="App">
       <header className="App-header">
-            <Component />
+            <Yetihome />
         </header>
     </div>
     )

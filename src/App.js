@@ -1,7 +1,6 @@
 import './App.css';
 import AppBar from './navmenu/AppBar'
 
-
 function App() {
   return (
     <div className="App">

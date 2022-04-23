@@ -1,4 +1,4 @@
-import './StylePages/Contactstyle.css';
+import './StylePages/contactstyle.css';
 import TextField from '@mui/material/TextField';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 import Button from '@mui/material/Button';
